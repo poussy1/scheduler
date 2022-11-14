@@ -1,0 +1,22 @@
+.right-border{
+    border-right: 1px solid white;
+    padding: 4px 10px 4px 75px;
+    line-height: 10px;
+}
+#main_nav{
+    justify-content: space-between;
+}
+#navbarText{
+    margin-right:75px;
+}
+a.nav-link{
+    color:white;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: 0;
+        align-items: center;
+    }
+    
+}
