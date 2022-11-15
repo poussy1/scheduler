@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ASU scheduler</title>
+    <title>AUS scheduler</title>
 
 
     
@@ -28,7 +28,7 @@
     <!-- top navigation bar -->
     <nav class="navbar navbar-expand-lg bg-dark text-white" id="main_nav">
         <div >
-            <a class="navbar-brand text-white right-border right-border" href="#">ASU</a>
+            <a class="navbar-brand text-white right-border right-border" href="#">AUS</a>
             <span> الشارقـه</span>
         </div>    
         <div class="collapse navbar-collapse" id="navbarText">
@@ -54,10 +54,11 @@
                         Dropdown
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#" onclick="showStudentOptions()">Student</a>
+                        <a class="dropdown-item" href="#" onclick="showProfOptions()">Prof</a>
+                        <a class="dropdown-item" href="#" onclick="showAdvisorOptions()">Advisor</a>
+                        <div class="dropdown-divider" ></div>
+                        <a class="dropdown-item" href="#" onclick="showHODOptions()">HOD</a>
                     </div>
                 </li>
             </ul>
@@ -69,10 +70,10 @@
     <!-- page content -->
     <div class="page_container">
         <h3>Welcome to Our Automated Registration Portal</h3>
-        <div class="container options">
+        <!-- for student -->
+        <div class="container options" id="student-options">
             <div class="row">
                 <div class="col-sm">
-                   
                     <div class="small-box center-text">1</div>
                     <div class="big-box center-text">Completed Courses</div>
                 </div>
@@ -108,7 +109,116 @@
                 </div>
             </div>
         </div>
+        <!-- end for student -->
+        <!-- for prof -->
+        <div class="container options" id="prof-options">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="small-box center-text">1</div>
+                    <div class="big-box center-text">My Courses</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">2</div>
+                    <div class="big-box center-text">Timeslots Selection</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">3</div>
+                    <div class="big-box center-text">Request Timeslots adjustment</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">4</div>
+                    <div class="big-box center-text">view students list by course</div>
+                </div>
+            </div>
+        </div>
+        <!-- end for prof -->
+        <!-- for HOD -->
+        <div class="container options" id="hod-options">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="small-box center-text">1</div>
+                    <div class="big-box center-text">Assign Courses</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">2</div>
+                    <div class="big-box center-text">View overall students requests</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">3</div>
+                    <div class="big-box center-text">Initiate automation of scheduler</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">4</div>
+                    <div class="big-box center-text">View automation results</div>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-sm">
+                    <div class="small-box center-text">5</div>
+                    <div class="big-box center-text">Imitate registration</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">6</div>
+                    <div class="big-box center-text">View Timeslots requests</div>
+                </div>
+                <div class="col-sm">
+        
+                </div>
+                <div class="col-sm button-container">
+                   
+                </div>
+            </div>
+        </div>
+        <!-- end for HOD -->
+        <!-- for advisor -->
+        <div class="container options" id="advisor-options">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="small-box center-text">1</div>
+                    <div class="big-box center-text">View meeting requests</div>
+                </div>
+                <div class="col-sm">
+                    <div class="small-box center-text">2</div>
+                    <div class="big-box center-text">View submissions of courses selected</div>
+                </div>
+                <div class="col-sm">
+                </div>
+                <div class="col-sm">
+                </div>
+            </div>
+        </div>
+        <!-- end for prof -->
     </div>    
    <!-- end page content  -->
+   <script>
+        function showStudentOptions(){
+            jQuery('#student-options').show()
+            jQuery('#prof-options').hide()
+            jQuery('#advisor-options').hide()
+            jQuery('#hod-options').hide()
+        }
+        function showProfOptions() {
+            jQuery('#prof-options').show()
+
+            jQuery('#student-options').hide()
+            jQuery('#advisor-options').hide()
+            jQuery('#hod-options').hide()
+        }
+      
+        function showAdvisorOptions() {
+            jQuery('#advisor-options').show()
+            jQuery('#student-options').hide()
+            jQuery('#prof-options').hide()
+            jQuery('#hod-options').hide()
+        }  
+
+        function showHODOptions() {
+            jQuery('#hod-options').show()
+            jQuery('#student-options').hide()
+            jQuery('#prof-options').hide()
+            jQuery('#advisor-options').hide()
+        }  
+   </script>
 </body>
 </html>
