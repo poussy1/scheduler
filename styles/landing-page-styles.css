@@ -63,6 +63,93 @@ a.nav-link{
     justify-content: space-around;
     padding: 50px 20px;
 }
+div.big-box>a{
+    text-decoration: none;
+    color: black;
+}
+table>thead>tr{ 
+    border-bottom: 3px solid grey;
+}
+iframe{
+    border:0px;
+    z-index: 100;
+    height: 10vh;
+}
+.student-options-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0% 3%;
+}
+.student-options-container>div{
+    width: 100%;
+}
+.student-options-container>div>table{
+    color:grey;
+}
+h3{
+    text-decoration: underline;
+    color: grey!important;
+    margin-bottom: 5vh!important;
+}
+.table{
+    text-align: center;
+}
+.type{
+    text-align: center;
+}
+.subject{
+    text-align: center;
+    flex-grow: 0.4 !important;
+    height:auto;
+    background-color: yellow;
+    padding: 10px 0px;
+}
+.space-around{
+    justify-content: space-around !important;
+}
+.subject-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 57vh;
+    overflow-y: scroll;
+    width: 220px !important;
+
+}
+
+.subject_type{
+    font-weight: bold;
+}
+.subject_name{
+    padding: 2px;
+    word-wrap: break-word;
+}
+.subject_credit_hours{
+    font-size: 10px;
+}
+.subject_details_box{
+    border: 0.5px solid black;
+    font-size:10px;
+}
+div.student-options-container>div>div.row{
+    flex-wrap: inherit !important;
+}
+.pending_credit_hours{
+    text-align: center;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80vw !important;
+}
+.pending_credit_hours_details{
+    border: 1px solid gray;
+    text-align: center;
+    padding: 15px;
+   
+   
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         flex-basis: 100%;
