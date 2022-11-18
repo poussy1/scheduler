@@ -28,7 +28,47 @@
 </head>
 <body >
     <!-- top navigation bar -->
-    <iframe src="navigation-bar.html" width="100%"></iframe>
+    <!-- top navigation bar -->
+    <nav class="navbar navbar-expand-lg bg-dark text-white" id="main_nav">
+        <div>
+            <a class="navbar-brand text-white right-border right-border" href="#">AUS</a>
+            <span> الشارقـه</span>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="bi bi-house"></i>Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person"></i>b123542</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-bell"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-envelope"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-share"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" onclick="showStudentOptions()">Student</a>
+                        <a class="dropdown-item" href="#" onclick="showProfOptions()">Prof</a>
+                        <a class="dropdown-item" href="#" onclick="showAdvisorOptions()">Advisor</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#" onclick="showHODOptions()">HOD</a>
+                    </div>
+                </li>
+            </ul>
+    
+        </div>
+    </nav>
+    <!-- end top navigation bar -->
     <!-- end top navigation bar -->
     
     <!-- page content -->
