@@ -27,6 +27,64 @@
     <!-- top navigation bar -->
     <iframe src="../navigation-bar.html" width="100%"></iframe>
     <!-- end top navigation bar -->
-    <h3>Courses Selection</h3>
+    <div class="student-options-container">
+        <h3>Courses Selection</h3>
+        <!-- details -->
+        <div class="row row-selection-course-list">
+            <div class=" selection-course-list">
+                <div class="dept-title">Computer Science and Eng. Courses</div>
+                <ul class="list-group">
+                    <li class="list-group-item" id="item1" onclick="itemClickHandler('item1')">A second item</li>
+                    <li class="list-group-item" id="item2" onclick="itemClickHandler('item2')">A third item</li>
+                    <li class="list-group-item" id="item3" onclick="itemClickHandler('item3')">A fourth item</li>
+                    <li class="list-group-item" id="item4" onclick="itemClickHandler('item4')">And a fifth one</li>
+                </ul>
+            </div>
+            <div class="">
+                <table class="table table-bordered">
+                    <thead>
+                        <td colspan="3" >
+                            List of Selected Courses
+                        </td>   
+                        <tr>
+                            <th scope="col">Course Type</th>
+                            <th scope="col">Course Code</th>
+                            <th scope="col">Reason</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" colspan="2">Selected Credit Hours</th>
+                            <td>18</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- end details -->
+
+        <button class="submit-selection">Submit</button>
+    </div>    
+   
 </body>
+<script>
+    function itemClickHandler(id){
+        document.getElementById(id).classList.add("grey-background");
+    }
+</script>
 </html>

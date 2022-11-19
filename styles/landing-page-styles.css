@@ -150,6 +150,44 @@ div.student-options-container>div>div.row{
    
    
 }
+.grey-background{
+    background-color:lightgrey !important;
+}
+.row-selection-course-list{
+    justify-content: space-around;
+}
+.selection-course-list{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dept-title{
+    width: fit-content;
+    border: 5px solid grey;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+.list-group{
+    width: 300px;
+}
+.submit-selection{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: grey;
+    border-radius: 20px;
+    padding: 20px 70px;
+    margin: 20px 0px;
+}
+.invite-button{
+    background-color: gray;
+    color: white;
+    padding: 0px 30px;
+    border-radius:20px ;
+
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         flex-basis: 100%;
